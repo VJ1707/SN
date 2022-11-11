@@ -46,7 +46,7 @@ public class TestSpringer {
 	@Test
 	public void verifySearchButtonIsEnabledTest() {
 	flag =driver.findElement(By.xpath("//div[@class='logo-meta']//div[3]//div[contains(text(),'Search') and @class='link-menu-label']")).isEnabled();
-	Assert.assertTrue(flag);
+	Assert.assertFalse(flag);
 	}
 	
 	@Test(priority=4)
