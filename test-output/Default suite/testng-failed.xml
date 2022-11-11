@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.helper.screenshot.ScreenShot">
+      <class name="com.helper.sampletesting.TestSpringer">
         <methods>
-          <include name="TitleTest"/>
+          <include name="Setup"/>
+          <include name="verifySearchButtonIsEnabledTest"/>
+          <include name="Closingtest"/>
         </methods>
-      </class> <!-- com.helper.screenshot.ScreenShot -->
+      </class> <!-- com.helper.sampletesting.TestSpringer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

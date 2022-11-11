@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Windows\Temp\testng-eclipse-100581596\testng-customsuite.xml</span>
+                    <span>C:\Windows\Temp\testng-eclipse--680806268\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.helper.sampletesting.TestSpringer" class="method navigator-link" hash-for-method="verifySearchButtonIsEnabledTest">verifySearchButtonIsEnabledTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,27 +118,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.helper.screenshot.TestSpringer" class="method navigator-link" hash-for-method="verifyLogo">verifyLogo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.helper.sampletesting.TestSpringer" class="method navigator-link" hash-for-method="verifyLogo">verifyLogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.helper.screenshot.TestSpringer" class="method navigator-link" hash-for-method="verifyPageTitleTest">verifyPageTitleTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.helper.sampletesting.TestSpringer" class="method navigator-link" hash-for-method="verifyPageTitleTest">verifyPageTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.helper.screenshot.TestSpringer" class="method navigator-link" hash-for-method="verifySearchButtonIsEnabledTest">verifySearchButtonIsEnabledTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.helper.sampletesting.TestSpringer" class="method navigator-link" hash-for-method="verifySearchButtonIsVisisbleTest">verifySearchButtonIsVisisbleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.helper.screenshot.TestSpringer" class="method navigator-link" hash-for-method="verifySearchButtonIsVisisbleTest">verifySearchButtonIsVisisbleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.helper.screenshot.TestSpringer" class="method navigator-link" hash-for-method="verifySearchClickTest">verifySearchClickTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.helper.sampletesting.TestSpringer" class="method navigator-link" hash-for-method="verifySearchClickTest">verifySearchClickTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -139,10 +148,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.helper.sampletesting.TestSpringer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonIsEnabledTest">
+                  </a> <!-- verifySearchButtonIsEnabledTest -->
+                  <span class="method-name">verifySearchButtonIsEnabledTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertFalse(Assert.java:67)
+	at org.testng.Assert.assertFalse(Assert.java:77)
+	at com.helper.sampletesting.TestSpringer.verifySearchButtonIsEnabledTest(TestSpringer.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.helper.screenshot.TestSpringer</span>
+              <span class="class-name">com.helper.sampletesting.TestSpringer</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -157,13 +217,6 @@
                   <a name="verifyPageTitleTest">
                   </a> <!-- verifyPageTitleTest -->
                   <span class="method-name">verifyPageTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchButtonIsEnabledTest">
-                  </a> <!-- verifySearchButtonIsEnabledTest -->
-                  <span class="method-name">verifySearchButtonIsEnabledTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -185,7 +238,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Windows\Temp\testng-eclipse-100581596\testng-customsuite.xml</span>
+            <span class="header-content">C:\Windows\Temp\testng-eclipse--680806268\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -194,12 +247,9 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Vijay.SN.CommentController&quot;/&gt;
-      &lt;class name=&quot;Vijay.SN.CommentForm&quot;/&gt;
-      &lt;class name=&quot;com.helper.screenshot.TestSpringer&quot;/&gt;
       &lt;class name=&quot;com.helper.actionsclass.ActionHelper&quot;/&gt;
+      &lt;class name=&quot;com.helper.sampletesting.TestSpringer&quot;/&gt;
       &lt;class name=&quot;Vijay.SN.App&quot;/&gt;
-      &lt;class name=&quot;Vijay.SN.Comments&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -213,7 +263,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (6 classes)</span>
+                <span class="test-name">Default test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,29 +292,29 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifySearchClickTest')
-data.setCell(0, 2, 'com.helper.screenshot.TestSpringer')
-data.setCell(0, 3, 2854);
+data.setCell(0, 2, 'com.helper.sampletesting.TestSpringer')
+data.setCell(0, 3, 4071);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLogo')
-data.setCell(1, 2, 'com.helper.screenshot.TestSpringer')
-data.setCell(1, 3, 425);
+data.setCell(1, 1, 'verifySearchButtonIsEnabledTest')
+data.setCell(1, 2, 'com.helper.sampletesting.TestSpringer')
+data.setCell(1, 3, 365);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySearchButtonIsEnabledTest')
-data.setCell(2, 2, 'com.helper.screenshot.TestSpringer')
-data.setCell(2, 3, 164);
+data.setCell(2, 1, 'verifyLogo')
+data.setCell(2, 2, 'com.helper.sampletesting.TestSpringer')
+data.setCell(2, 3, 131);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifySearchButtonIsVisisbleTest')
-data.setCell(3, 2, 'com.helper.screenshot.TestSpringer')
-data.setCell(3, 3, 105);
+data.setCell(3, 2, 'com.helper.sampletesting.TestSpringer')
+data.setCell(3, 3, 76);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyPageTitleTest')
-data.setCell(4, 2, 'com.helper.screenshot.TestSpringer')
-data.setCell(4, 3, 25);
+data.setCell(4, 2, 'com.helper.sampletesting.TestSpringer')
+data.setCell(4, 3, 19);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -290,34 +340,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.helper.screenshot.TestSpringer</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.helper.sampletesting.TestSpringer</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifySearchButtonIsEnabledTest</span>
-                <span class="method-start">15143 ms</span>
+                <span class="method-start">25949 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPageTitleTest</span>
-                <span class="method-start">15318 ms</span>
+                <span class="method-start">26325 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLogo</span>
-                <span class="method-start">15360 ms</span>
+                <span class="method-start">26347 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifySearchButtonIsVisisbleTest</span>
-                <span class="method-start">15789 ms</span>
+                <span class="method-start">26481 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifySearchClickTest</span>
-                <span class="method-start">15898 ms</span>
+                <span class="method-start">26563 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Closingtest</span>
-                <span class="method-start">18757 ms</span>
+                <span class="method-start">30639 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
