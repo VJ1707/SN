@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-11T20:25:28 IST" name="Default suite" finished-at="2022-11-11T20:25:43 IST" duration-ms="15184">
+  <suite started-at="2022-11-11T21:01:41 IST" name="Suite" finished-at="2022-11-11T21:02:10 IST" duration-ms="29187">
     <groups>
     </groups>
-    <test started-at="2022-11-11T20:25:28 IST" name="Default test" finished-at="2022-11-11T20:25:43 IST" duration-ms="15184">
-      <class name="com.helper.screenshot.ScreenShot">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.helper.screenshot.ScreenShot@61001b64]" started-at="2022-11-11T20:25:28 IST" name="Setup" finished-at="2022-11-11T20:25:40 IST" duration-ms="12057" status="PASS">
+    <test started-at="2022-11-11T21:01:41 IST" name="Test" finished-at="2022-11-11T21:02:10 IST" duration-ms="29187">
+      <class name="com.helper.screenshot.TestSpringer">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.helper.screenshot.TestSpringer@61001b64]" started-at="2022-11-11T21:01:41 IST" name="Setup" finished-at="2022-11-11T21:02:05 IST" duration-ms="24586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="verifySearchButtonIsEnabledTest()[pri:0, instance:com.helper.screenshot.ScreenShot@61001b64]" started-at="2022-11-11T20:25:40 IST" name="verifySearchButtonIsEnabledTest" finished-at="2022-11-11T20:25:40 IST" duration-ms="82" status="PASS">
+        <test-method signature="verifySearchButtonIsEnabledTest()[pri:0, instance:com.helper.screenshot.TestSpringer@61001b64]" started-at="2022-11-11T21:02:05 IST" name="verifySearchButtonIsEnabledTest" finished-at="2022-11-11T21:02:06 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchButtonIsEnabledTest -->
-        <test-method signature="verifyPageTitleTest()[pri:1, instance:com.helper.screenshot.ScreenShot@61001b64]" started-at="2022-11-11T20:25:40 IST" name="verifyPageTitleTest" finished-at="2022-11-11T20:25:40 IST" duration-ms="28" status="PASS">
+        <test-method signature="verifyPageTitleTest()[pri:1, instance:com.helper.screenshot.TestSpringer@61001b64]" started-at="2022-11-11T21:02:06 IST" name="verifyPageTitleTest" finished-at="2022-11-11T21:02:06 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitleTest -->
-        <test-method signature="verifyLogo()[pri:2, instance:com.helper.screenshot.ScreenShot@61001b64]" started-at="2022-11-11T20:25:40 IST" name="verifyLogo" finished-at="2022-11-11T20:25:40 IST" duration-ms="147" status="PASS">
+        <test-method signature="verifyLogo()[pri:2, instance:com.helper.screenshot.TestSpringer@61001b64]" started-at="2022-11-11T21:02:06 IST" name="verifyLogo" finished-at="2022-11-11T21:02:06 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogo -->
-        <test-method signature="verifySearchButtonIsVisisbleTest()[pri:3, instance:com.helper.screenshot.ScreenShot@61001b64]" started-at="2022-11-11T20:25:40 IST" name="verifySearchButtonIsVisisbleTest" finished-at="2022-11-11T20:25:40 IST" duration-ms="95" status="PASS">
+        <test-method signature="verifySearchButtonIsVisisbleTest()[pri:3, instance:com.helper.screenshot.TestSpringer@61001b64]" started-at="2022-11-11T21:02:06 IST" name="verifySearchButtonIsVisisbleTest" finished-at="2022-11-11T21:02:06 IST" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchButtonIsVisisbleTest -->
-        <test-method signature="verifySearchClickTest()[pri:4, instance:com.helper.screenshot.ScreenShot@61001b64]" started-at="2022-11-11T20:25:40 IST" name="verifySearchClickTest" finished-at="2022-11-11T20:25:43 IST" duration-ms="2323" status="PASS">
+        <test-method signature="verifySearchClickTest()[pri:4, instance:com.helper.screenshot.TestSpringer@61001b64]" started-at="2022-11-11T21:02:06 IST" name="verifySearchClickTest" finished-at="2022-11-11T21:02:09 IST" duration-ms="3124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchClickTest -->
-        <test-method is-config="true" signature="Closingtest()[pri:0, instance:com.helper.screenshot.ScreenShot@61001b64]" started-at="2022-11-11T20:25:43 IST" name="Closingtest" finished-at="2022-11-11T20:25:43 IST" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="Closingtest()[pri:0, instance:com.helper.screenshot.TestSpringer@61001b64]" started-at="2022-11-11T21:02:09 IST" name="Closingtest" finished-at="2022-11-11T21:02:10 IST" duration-ms="599" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closingtest -->
-      </class> <!-- com.helper.screenshot.ScreenShot -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.helper.screenshot.TestSpringer -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
